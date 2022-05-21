@@ -27,12 +27,14 @@ import Functions.Cities as fcity
 
 # Selecionando o diretório
 os.getcwd()
-os.chdir("D:\\Programing\\python\\nepe\\nepe-mercado-trabalho\\Data")
+os.chdir('D:\\Programing\\python\\nepe\\nepe-mercado-trabalho\\Data')
 
 # Criando um array para as colunas e importando os dados
 colnames = ['uf','code','city']
 fcolname.setColNames(colnames)
-caged = pd.read_excel("caged-tabela.xlsx", sheet_name="Tabela 8.1", usecols="B:EI", nrows=(5577-7), skiprows=6, names=colnames)
+
+uri = 'https://github.com/nogueira-guilherme/nepe-mercado-trabalho/blob/master/Data/caged-tabela.xlsx?raw=true'
+caged = pd.read_excel(uri, sheet_name='Tabela 8.1', usecols='B:EI', nrows=(5577-7), skiprows=6, names=colnames)
 
 # Selecionando os dados de São João del-Rei
 sjdr = caged[(caged['code'] == 316250)]
