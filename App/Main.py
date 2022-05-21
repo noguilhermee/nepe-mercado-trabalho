@@ -25,6 +25,7 @@ import Functions.Cities as fcity
        PROGRAMA PRINCIPAL
 """""""""""""""""""""""""""""""""
 
+# Selecionando o diretório
 os.getcwd()
 os.chdir("D:\\Programing\\python\\nepe\\nepe-mercado-trabalho\\Data")
 
@@ -47,6 +48,6 @@ fcity.getCityDataframe(sjdr, df_sjdr)
 # Reiniciar os index das linhas
 df_sjdr = df_sjdr.reset_index()
 
-
+# Manipulação
 estoque = df_sjdr['estoque']
 estoque.to_excel('estoque.xlsx')
