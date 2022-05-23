@@ -12,8 +12,8 @@ import pandas as pd
 import datetime as date
 import matplotlib.pyplot as plt
 
-import Functions.Colnames as fcolname
-import Functions.Cities as fcity
+import functions.colnames as fcolname
+import functions.cities as fcity
 
 
 """""""""""""""""""""""""""""""""
@@ -27,7 +27,7 @@ import Functions.Cities as fcity
 
 # Selecionando o diretório
 os.getcwd()
-os.chdir('D:\\Programing\\python\\nepe\\nepe-mercado-trabalho\\Data')
+os.chdir('D:\\Programing\\python\\nepe\\nepe-mercado-trabalho\\data')
 
 # Criando um array para as colunas e importando os dados
 colnames = ['uf','code','city']
