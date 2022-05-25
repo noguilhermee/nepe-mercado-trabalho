@@ -82,7 +82,7 @@ def get_city_by_code(code):
     colnames = set_colnames()
 
     # Importando os dados
-    uri = 'https://github.com/nogueira-guilherme/nepe-mercado-trabalho/blob/master/data/caged-tabela.xlsx?raw=true'
+    uri = 'https://github.com/nogueira-guilherme/nepe-mercado-trabalho/blob/master/Data/caged.xlsx?raw=true'
     caged = pd.read_excel(uri, sheet_name='Tabela 8.1', usecols='B:EI', nrows=(5577 - 7), skiprows=6, names=colnames)
 
     # Selecionando os dados de São João del-Rei
